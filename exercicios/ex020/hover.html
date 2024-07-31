@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover example</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        p:hover {
+            text-decoration: underline;
+        }
+
+        div {
+            font-weight: bold;
+            font-size: 18px;
+            padding: 5px;
+            text-align: center;
+            margin: auto;
+        }
+
+        div > p {
+            display: none;
+            font-size: medium;
+            font-weight: normal;
+        }
+
+        div:hover > p {
+            display: block;
+        }
+
+        div:hover {
+            background-color: rgba(214, 214, 214, 0.582);
+            width: 130px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover Example</h1>
+    <br>
+    <div>Bestsellers
+        <p><a href="https://www.amazon.com/Best-Sellers-Amazon-Devices-Accessories/zgbs/amazon-devices/ref=zg_bs_nav_amazon-devices_0" target="_blank">Devices & Accessories</a></p>
+        <p>Appliances</p>
+        <p>Automotive</p>
+        <p>Baby</p>
+        <p>Beauty & Personal Care</p>
+        <p>Books</p>
+        <p>Camera & Photo</p>
+        <p>Clothing</p>
+    </div>
+</body>
+</html>

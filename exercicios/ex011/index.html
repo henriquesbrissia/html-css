@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMTL5 media</title>
+</head>
+<body>
+    <h1>Dynamic Image</h1>
+    <p>Try to open this page on diferent sized devices</p>
+    <picture>
+        <source media="(max-width: 730px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1030px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="flex image">
+    </picture>
+    <h1>Playing audio</h1>
+    <p>Let's play some audio in HTML5</p>
+    <audio src="media/Broken Drum Machine - Godmode.mp3" controls autoplay></audio>
+</body>
+</html>

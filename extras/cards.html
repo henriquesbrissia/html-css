@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 98vh;
+            background-image: linear-gradient( 108.7deg,  rgba(221,22,224,1) 11%, rgba(111,22,190,1) 88.2% );
+            background-attachment: fixed;
+        }
+
+        .wrapper {
+            display: flex;
+            gap: 20px;
+            width: 300px;
+            border-radius: 14px;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+        }
+
+        .card {
+            scroll-snap-align: center;
+            box-sizing: border-box;
+            padding: 20px 30px;
+            flex-shrink: 0;
+            width: 300px;
+            background-color: rgba(255, 255, 255, 0.733);
+            border-radius: 14px;
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+        }
+
+        ::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgba(99, 99, 99, 0.767);
+            border-radius: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <h2>Card 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deserunt consequatur natus ullam quasi non, nulla doloribus dolorem quibusdam!</p>
+        </div>
+        <div class="card">
+            <h2>Card 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deserunt consequatur natus ullam quasi non, nulla doloribus dolorem quibusdam!</p>
+        </div>
+        <div class="card">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deserunt consequatur natus ullam quasi non, nulla doloribus dolorem quibusdam!</p>
+        </div>
+        <div class="card">
+            <h2>Card 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deserunt consequatur natus ullam quasi non, nulla doloribus dolorem quibusdam!</p>
+        </div>
+        <div class="card">
+            <h2>Card 5</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deserunt consequatur natus ullam quasi non, nulla doloribus dolorem quibusdam!</p>
+        </div>
+    </div>
+</body>
+</html>
