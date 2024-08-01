@@ -57,7 +57,7 @@ header > p {
     color: white;
     font-family: var(--font-default);
     font-size: 1.1em;
-    margin-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 nav {
